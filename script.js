@@ -29,8 +29,8 @@ req.get({
 			var source_url = url + "#" + parent
 			console.log("parent found", parent)
 
-			//var target_url = "https://linkedresearch.org/ldn/tests/target/dd562900-05aa-11e7-bd05-bf9fab02ee3c?discovery=link-header"
-			//var target_url = "https://linkedresearch.org/ldn/tests/target/dd562900-05aa-11e7-bd05-bf9fab02ee3c?discovery=rdf-body"
+			//var target_url = "https://linkedresearch.org/ldn/tests/target/3a2cb180-05b0-11e7-bd05-bf9fab02ee3c?discovery=link-header"
+			//var target_url = "https://linkedresearch.org/ldn/tests/target/3a2cb180-05b0-11e7-bd05-bf9fab02ee3c?discovery=rdf-body"
 			var target_url = $(this).attr("resource");
 			console.log("target_url found", target_url);
 			var inbox = tools.inbox_from_header(target_url, source_url)

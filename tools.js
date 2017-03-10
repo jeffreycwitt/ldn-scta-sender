@@ -88,10 +88,10 @@ module.exports = {
 			    url: inbox,
 			    method: "POST",
 					json: postdata,
-          contentType: 'application/ld+json'
-
-
-			  }, function(err, resp, body) {
+          headers: {
+            'content-type': 'application/ld+json'
+          }
+        }, function(err, resp, body) {
 
 				console.log("post-body", err)
 				//console.log(resp)
